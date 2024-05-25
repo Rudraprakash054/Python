@@ -78,14 +78,14 @@ class Dad(Family):
 Family().son()
 Dad().son()
 
-'''
-Abstract class - The class won't allow to create an object
-In python, we can't create a abstract but there is a default module in python(abc)
-'''
-
 
 class AbstractTestClass(ABC):
-    # class variable
+    """
+    Abstract class - The class won't allow to create an object
+    In python, we can't create a abstract but there is a default module in python(abc)
+    """
+
+    # class variable 
     greeting = "Hi, I'm ABSTRACT"
 
     def __init__(self) -> None:
@@ -127,13 +127,10 @@ print(ChildAbstract())
 # print(AbstractTestClass()) -> If we call this class throws an error
 
 
-'''
-Example of public, private and protect 
-'''
-
-
 class Company:
-
+    """
+    Example of public, private and protect
+    """
     def __init__(self, name, add, mobile_no):
         self.name = name  # Public - Access from anywhere
         self._add = add  # Protected - Access within the class and it's sub-class
@@ -150,5 +147,5 @@ try:
     print(f'Mobile No: {delhivery.__mobile_no}')
 except AttributeError:
     print("Error: You can't access private data members with objects, classes and outside of the class")
-    print(
-        delhivery.company_mobile_number())  # It return mobile number, because private data members accessible inside the class
+    # It returns mobile number, because private data members accessible inside the class
+    print(delhivery.company_mobile_number())
