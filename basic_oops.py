@@ -103,13 +103,10 @@ class AbstractTestClass(ABC):
         return self.name
 
 
-'''
-Child class must implement the abstract method.
-'''
-
-
 class ChildAbstract(AbstractTestClass):
-
+    """
+    Child class must implement the abstract method.
+    """
     # def __init__(self) -> None:
     #     super().__init__("Rudra Prakash")
 
